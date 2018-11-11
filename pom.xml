@@ -87,12 +87,12 @@
         <configuration>
           <path>/${project.build.finalName}</path>
           <!-- Embedded port -->
-          <port>8080</port>
+          <port>8082</port>
           <!--
             The default authentication credentials for remote deployment are username "admin" with no password To
             override credentials, define a server in settings.xml and activate it using the <server> element
           -->
-          <url>http://localhost:8080/manager</url>
+          <url>http://13.127.92.235:8082/manager</url>
         </configuration>
       </plugin>
     </plugins>
