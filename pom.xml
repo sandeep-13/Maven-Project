@@ -54,6 +54,18 @@
       <scope>runtime</scope>
     </dependency>
   </dependencies>
+  
+	<distributionManagement>
+		 <snapshotRepository>
+		    <id>deploymentRepo</id>
+		    <url>http://13.232.200.78:8081/repository/maven-snapshots//</url>
+		 </snapshotRepository>
+		
+		<repository>
+		    <id>deploymentRepo</id>
+		    <url>http://13.232.200.78:8081/repository/maven-releases//</url>
+		</repository>
+  	</distributionManagement>
 
   <build>
     <finalName>webapps</finalName>
@@ -92,7 +104,7 @@
             The default authentication credentials for remote deployment are username "admin" with no password To
             override credentials, define a server in settings.xml and activate it using the <server> element
           -->
-          <url>http://52.66.239.93:8082/manager</url>
+          <url>http://13.232.89.172:8082/manager</url>
         </configuration>
       </plugin>
     </plugins>
